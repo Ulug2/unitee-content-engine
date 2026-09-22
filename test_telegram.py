@@ -56,13 +56,15 @@ async def main():
     print(f"Name: {me.first_name}")
     print(f"Username: @{me.username}" if me.username else "Username: none")
 
-    print("\nChecking Tumba...")
-    tumba = await client.get_entity("https://t.me/nutumba")
-    print(f"Tumba: {tumba.title}")
+    # Source channel URLs come from the environment rather than being hardcoded here.
+    # Set CHANNEL_A_URL / CHANNEL_B_URL in .env (see .env.example).
+    print("\nChecking channel A...")
+    channel_a = await client.get_entity(os.getenv("CHANNEL_A_URL"))
+    print(f"Channel A: {channel_a.title}")
 
-    print("\nChecking SDU Angme...")
-    sdu = await client.get_entity("https://t.me/sdu_angme")
-    print(f"SDU Angme: {sdu.title}")
+    print("\nChecking channel B...")
+    channel_b = await client.get_entity(os.getenv("CHANNEL_B_URL"))
+    print(f"Channel B: {channel_b.title}")
 
     print("\nConnection test successful!")
 

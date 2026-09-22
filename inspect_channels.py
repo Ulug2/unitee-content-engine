@@ -43,15 +43,10 @@ async def inspect_channel(username, name):
 async def main():
     await client.start()
 
-    await inspect_channel(
-        "https://t.me/nutumba",
-        "TUMBA"
-    )
-
-    await inspect_channel(
-        "https://t.me/sdu_angme",
-        "SDU ANGME"
-    )
+    # Source channel URLs come from the environment rather than being hardcoded here.
+    # Set CHANNEL_A_URL / CHANNEL_B_URL in .env (see .env.example).
+    await inspect_channel(os.getenv("CHANNEL_A_URL"), "CHANNEL A")
+    await inspect_channel(os.getenv("CHANNEL_B_URL"), "CHANNEL B")
 
     await client.disconnect()
 

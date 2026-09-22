@@ -64,6 +64,7 @@ Needs, as environment variables (a `.env` file is loaded automatically where scr
 |---|---|---|
 | `OPENAI_API_KEY` | `generate_posts.py` | GPT-5-mini calls for seeding, generation, scoring |
 | `TELEGRAM_API_ID` / `TELEGRAM_API_HASH` | `export_channels.py`, `inspect_channels.py`, `test_telegram.py` | Telegram API credentials (from [my.telegram.org](https://my.telegram.org)) — only needed to re-scrape, not to generate posts |
+| `CHANNEL_A_URL` / `CHANNEL_B_URL` | `export_channels.py`, `inspect_channels.py`, `test_telegram.py` | The two source Telegram channels to scrape. Deliberately not hardcoded in the scripts — see [Data & privacy](#data--privacy). |
 
 `generate_posts.py` needs `safe_style_posts.json` on disk (see below) plus the three config
 files (`unitee_style_profile.json`, `generation_rules.json`, `content_strategy.json`, all
@@ -84,6 +85,11 @@ committed, regenerated every run).
   this project's own rules (`generation_rules.json`) forbid generating. They stay local only,
   even though this is a private repo.
 - `generation_debug.json` — a large per-run dump, regenerated every run.
+- **Source channel identity.** The two Telegram channels this project scraped are not named
+  anywhere in this repo — `export_channels.py`, `inspect_channels.py` and `test_telegram.py`
+  read them from `CHANNEL_A_URL` / `CHANNEL_B_URL` in `.env` instead of hardcoding them, and
+  `unitee_style_profile.json`'s source counts use the same generic labels. This keeps the
+  source community's identity out of a public repo, on top of never publishing its posts.
 
 **Committed**: everything downstream of the raw scrape that doesn't contain real post text —
 `unitee_style_profile.json` (aggregate stats: length/language/punctuation distributions, no
@@ -110,14 +116,3 @@ specifically; everything else it reads is already in this repo.
 | `generate_posts.py` | The generator — see pipeline diagram above. |
 | `generated_posts.json` | Latest run's output: 20 posts, JSON array of strings. |
 | `requirements.txt` | Third-party dependencies. |
-
-## Known limitations
-
-- Kazakh-language output has not been reviewed by a native speaker; treat it as unverified
-  before publishing.
-- Stage 3's AI scoring is deliberately lenient (a mundane-but-believable post is meant to pass);
-  most of the real filtering for "sounds like AI" happens in Stage 4's selection weighting, not
-  as a hard rejection.
-- The safety regexes are tuned against the current corpus and test cases, not exhaustive —
-  review output before publishing, the same way you would review any AI-generated content going
-  to real users.

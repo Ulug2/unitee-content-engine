@@ -2,8 +2,8 @@
   "dataset": {
     "total_posts": 153,
     "sources": {
-      "tumba": 68,
-      "sdu_angme": 85
+      "channel_a": 68,
+      "channel_b": 85
     }
   },
   "length": {

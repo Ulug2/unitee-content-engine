@@ -13,9 +13,11 @@ API_HASH = os.getenv("TELEGRAM_API_HASH")
 
 client = TelegramClient("unitee_session", API_ID, API_HASH)
 
+# Source channel URLs are read from the environment rather than hardcoded, so the source
+# community isn't identifiable from this file alone. Set CHANNEL_A_URL / CHANNEL_B_URL in .env.
 CHANNELS = {
-    "tumba": "https://t.me/nutumba",
-    "sdu_angme": "https://t.me/sdu_angme",
+    "channel_a": os.getenv("CHANNEL_A_URL"),
+    "channel_b": os.getenv("CHANNEL_B_URL"),
 }
 
 MESSAGES_PER_CHANNEL = 100
@@ -52,6 +54,8 @@ async def main():
     all_posts = []
 
     for channel_key, channel_url in CHANNELS.items():
+        if not channel_url:
+            raise RuntimeError(f"Missing URL for '{channel_key}' - set it in .env (see .env.example).")
         posts = await export_channel(channel_key, channel_url)
         all_posts.extend(posts)
 
