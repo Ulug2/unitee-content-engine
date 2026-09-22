@@ -1,0 +1,147 @@
+{
+  "dataset": {
+    "total_posts": 153,
+    "sources": {
+      "tumba": 68,
+      "sdu_angme": 85
+    }
+  },
+  "length": {
+    "average_characters": 147.1,
+    "median_characters": 71,
+    "shortest_characters": 15,
+    "longest_characters": 2222,
+    "average_words": 24.8,
+    "median_words": 12
+  },
+  "language": {
+    "counts": {
+      "latin": 26,
+      "cyrillic": 109,
+      "mixed": 18
+    },
+    "percentages": {
+      "latin": 17.0,
+      "cyrillic": 71.2,
+      "mixed": 11.8
+    }
+  },
+  "format": {
+    "counts": {
+      "general_statement": 58,
+      "short_statement": 28,
+      "long_story": 2,
+      "short_question": 48,
+      "question": 17
+    },
+    "percentages": {
+      "general_statement": 37.9,
+      "short_statement": 18.3,
+      "long_story": 1.3,
+      "short_question": 31.4,
+      "question": 11.1
+    }
+  },
+  "questions": {
+    "question_posts": 65,
+    "question_percentage": 42.5,
+    "types": {
+      "request": 1,
+      "other_question": 55,
+      "who": 3,
+      "how": 5,
+      "where": 1
+    }
+  },
+  "emoji": {
+    "posts_with_emoji": 23,
+    "percentage_with_emoji": 15.0,
+    "total_emojis": 32,
+    "average_emojis_per_post": 0.21
+  },
+  "punctuation": {
+    "counts": {
+      "lowercase_start": 34,
+      "question_mark": 65,
+      "multiple_question": 2,
+      "exclamation_mark": 5
+    },
+    "percentages": {
+      "lowercase_start": 22.2,
+      "question_mark": 42.5,
+      "multiple_question": 1.3,
+      "exclamation_mark": 3.3
+    }
+  },
+  "casual_language": {
+    "posts_with_casual_words": 21,
+    "common_words": {
+      "пж": 5,
+      "ко": 4,
+      "pls": 2,
+      "краш": 2,
+      "wtf": 2,
+      "wth": 1,
+      "literally": 1,
+      "ребят": 1,
+      "го": 1,
+      "lol": 1,
+      "bro": 1,
+      "блять": 1,
+      "достар": 1,
+      "лол": 1
+    }
+  },
+  "personal_language": {
+    "first_person_posts": 41,
+    "first_person_percentage": 26.8,
+    "second_person_posts": 30,
+    "second_person_percentage": 19.6
+  },
+  "language_mixing": {
+    "counts": {
+      "english_indicators": 22,
+      "russian_indicators": 127,
+      "kazakh_indicators": 23
+    },
+    "percentages": {
+      "english_indicators": 14.4,
+      "russian_indicators": 83.0,
+      "kazakh_indicators": 15.0
+    }
+  },
+  "topics": {
+    "counts": {
+      "other": 118,
+      "relationships": 16,
+      "food": 9,
+      "campus": 5,
+      "classes": 4,
+      "studying": 3,
+      "clubs": 3,
+      "events": 3,
+      "career": 2,
+      "professors": 1,
+      "friendship": 1
+    },
+    "percentages": {
+      "other": 77.1,
+      "relationships": 10.5,
+      "food": 5.9,
+      "campus": 3.3,
+      "classes": 2.6,
+      "studying": 2.0,
+      "clubs": 2.0,
+      "events": 2.0,
+      "career": 1.3,
+      "professors": 0.7,
+      "friendship": 0.7
+    }
+  },
+  "emotional_style": {
+    "posts_with_positive_indicators": 12,
+    "posts_with_negative_indicators": 5,
+    "positive_percentage": 7.8,
+    "negative_percentage": 3.3
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "generation_philosophy": {
+    "primary_goal": "Generate spontaneous anonymous student thoughts, questions, observations, opinions and discussions that feel naturally typed rather than professionally written.",
+    "optimize_for": [
+      "spontaneity",
+      "naturalness",
+      "specificity_without_identification",
+      "variety",
+      "casual typing",
+      "authentic student voice"
+    ],
+    "do_not_optimize_for": [
+      "engagement bait",
+      "perfect grammar",
+      "marketing",
+      "maximum comments",
+      "perfect readability"
+    ]
+  },
+
+"writing_behavior": {
+    "core_principle": "Generate student thoughts, not student content.",
+
+    "posts_should_feel_like": [
+        "a thought someone suddenly had",
+        "a small situation that annoyed someone",
+        "a weird question they genuinely wondered about",
+        "a personal contradiction",
+        "a specific but harmless everyday situation",
+        "a random observation",
+        "a small confession",
+        "a spontaneous opinion",
+        "a short story with no polished conclusion",
+        "something typed immediately before the person overthinks it"
+    ],
+
+    "thought_structures": [
+        "situation -> reaction",
+        "observation -> confusion",
+        "small problem -> frustration",
+        "realization -> question",
+        "personal contradiction",
+        "unexpected comparison",
+        "minor annoyance",
+        "specific hypothetical",
+        "confession",
+        "random question",
+        "uncertain opinion",
+        "I thought X but actually Y",
+        "short personal situation",
+        "question caused by something that happened",
+        "small thing that suddenly became interesting"
+    ],
+
+    "avoid": [
+        "generic student advice posts",
+        "generic productivity posts",
+        "generic self-improvement posts",
+        "generic budgeting posts",
+        "generic study tips",
+        "generic motivational thoughts",
+        "generic engagement questions",
+        "posts that exist mainly to collect comments",
+        "posts that sound like content marketing",
+        "perfectly packaged relatable content"
+    ]
+},
+  "natural_imperfection": {
+    "enabled": true,
+
+    "allowed": [
+      "lowercase beginnings",
+      "missing commas",
+      "missing periods",
+      "informal punctuation",
+      "short fragments",
+      "run-on sentences",
+      "mixed languages",
+      "informal abbreviations",
+      "casual spelling",
+      "repeated letters",
+      "occasional awkward phrasing",
+      "switching languages mid-sentence"
+    ],
+
+    "do_not_force": [
+      "random spelling mistakes",
+      "typos in every post",
+      "slang in every post",
+      "emojis in every post",
+      "broken grammar in every post"
+    ]
+  },
+
+  "punctuation": {
+    "em_dash": "never",
+    "en_dash": "never",
+    "semicolon": "rare",
+    "formal_colons": "rare",
+    "perfect_punctuation": "avoid",
+    "multiple_question_marks": "allowed",
+    "multiple_exclamation_marks": "allowed",
+    "ellipsis": "allowed"
+  },
+
+  "language": {
+    "primary": "cyrillic",
+    "secondary": "latin",
+    "mixed_language_posts": "allowed",
+
+    "principle": "Language should reflect natural student communication, not a forced language formula.",
+
+    "do_not": [
+      "insert English words just to reach a percentage",
+      "insert Kazakh words just to reach a percentage",
+      "make every Russian post mixed"
+    ]
+  },
+
+  "post_length": {
+    "distribution": {
+      "0_30_characters": 10,
+      "31_60_characters": 27,
+      "61_100_characters": 29,
+      "101_150_characters": 11,
+      "151_250_characters": 12,
+      "250_plus_characters": 11
+    },
+
+    "principle": "Use different lengths naturally. Do not force every post to be short."
+  },
+
+  "post_types": {
+    "questions": 42,
+    "statements": 30,
+    "opinions": 15,
+    "personal_thoughts": 8,
+    "longer_discussions": 5
+  },
+
+  "question_behavior": {
+    "principle": "Questions should sound like genuine requests for information or opinions, not engagement bait.",
+
+    "good_patterns": [
+      "кто знает где...",
+      "а есть тут кто...",
+      "кто нибудь знает...",
+      "как у вас...",
+      "у кого тоже...",
+      "это только у меня...",
+      "стоит ли...",
+      "а вы как думаете...",
+      "где обычно...",
+      "почему..."
+    ],
+
+    "avoid": [
+      "делитесь своими лучшими советами",
+      "расскажите в комментариях",
+      "what do you guys think? 😍",
+      "let's discuss",
+      "drop your answers below"
+    ]
+  },
+
+"content": {
+    "principle": "Topics are a loose pool of possibilities, not a checklist or target distribution.",
+
+    "possible_subjects": [
+        "student life",
+        "university life",
+        "relationships",
+        "crushes",
+        "friendships",
+        "awkward social situations",
+        "studying",
+        "classes",
+        "money",
+        "food",
+        "part-time work",
+        "random observations",
+        "small frustrations",
+        "humor",
+        "recommendations",
+        "hypothetical situations",
+        "personal habits",
+        "things students notice",
+        "things students wonder about",
+        "minor everyday problems",
+        "unexpected opinions"
+    ],
+
+    "rules": [
+        "Do not deliberately cycle through subjects.",
+        "Do not try to cover every subject in one batch.",
+        "Do not produce several posts about the same underlying idea.",
+        "A post can be about an ordinary subject if the thought itself is specific and interesting.",
+        "Prefer an unusual angle on an ordinary student situation over a generic question about a popular topic."
+    ]
+},
+  "factual_information": {
+    "default_knowledge": "none",
+
+    "rule": "The generator knows nothing specific about a university unless verified university data is explicitly supplied.",
+
+    "never_invent": [
+      "buildings",
+      "rooms",
+      "floors",
+      "professors",
+      "courses",
+      "events",
+      "clubs",
+      "cafeterias",
+      "restaurants",
+      "food trucks",
+      "dorms",
+      "facilities",
+      "campus problems",
+      "class schedules",
+      "prices",
+      "opening hours",
+      "policies",
+      "student services"
+    ],
+
+    "safe_behavior": "If information would require knowledge of the specific university, turn the statement into a question or keep it generic."
+  },
+
+  "specificity": {
+    "principle": "Posts should be specific in thought but generic enough to avoid inventing real-world facts or identifying people.",
+
+    "good": [
+      "я каждый раз перед экзаменом обещаю себе начать раньше",
+      "кто нибудь реально умеет учиться в библиотеке без телефона?",
+      "почему знакомиться с людьми после первого курса уже так сложно",
+      "у кого тоже настроение меняется после одной плохой пары"
+    ],
+
+    "bad": [
+      "вчера в H102 опять сломался проектор",
+      "профессор Азат сегодня поставил мне...",
+      "новый фудтрак возле главного входа...",
+      "девушка с рыжими волосами из 2.327..."
+    ]
+  },
+
+"thought_generation": {
+    "principle": "Before writing each post, internally imagine a small concrete student situation, realization, contradiction, annoyance, curiosity, or observation. Then write only the natural post that could come from that thought.",
+
+    "important": [
+        "Do not output the imagined situation separately.",
+        "Do not explain the thought.",
+        "Do not turn the thought into a polished story.",
+        "Do not force a question at the end.",
+        "The post can have no obvious purpose.",
+        "The post can be slightly weird or random.",
+        "The post does not need to be universally relatable.",
+        "The post does not need to generate comments."
+    ]
+},
+  "ai_detection_avoidance": {
+    "principle": "Naturalness comes from variation and genuine conversational structure, not from intentionally adding errors.",
+
+    "avoid": [
+      "repeated sentence templates",
+      "perfectly balanced sentences",
+      "generic motivational language",
+      "overly clever observations",
+      "unnecessary metaphors",
+      "unnecessary context",
+      "excessive emojis",
+      "excessive slang",
+      "formal English",
+      "perfectly grammatical English questions"
+    ]
+  },
+
+  "originality": {
+    "source_posts_are_style_reference_only": true,
+    "never_copy": true,
+    "never_paraphrase": true,
+    "never_reconstruct": true,
+    "never_reuse_identifiable_details": true
+  },
+
+  "safety": {
+    "never_generate": [
+      "doxxing",
+      "requests to identify private individuals",
+      "identifying descriptions of students",
+      "social media handles",
+      "phone numbers",
+      "private contact information",
+      "targeted harassment",
+      "threats",
+      "sexual content involving identifiable people",
+      "private personal information"
+    ]
+  }
+}

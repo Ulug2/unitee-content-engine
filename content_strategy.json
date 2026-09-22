@@ -1,0 +1,354 @@
+{
+  "purpose": {
+    "description": "Generate original anonymous student-community posts for UniTee during the early campus growth stage.",
+    "primary_goal": "Create natural discussion that feels appropriate for a student anonymous social platform.",
+    "daily_target": 20,
+    "quality_over_quantity": true
+  },
+
+  "core_principles": {
+    "originality": true,
+    "student_like_writing": true,
+    "natural_imperfection": true,
+    "no_unverified_campus_facts": true,
+    "no_fake_events": true,
+    "no_fake_people": true,
+    "no_fake_personal_identities": true,
+    "no_source_paraphrasing": true
+  },
+
+  "style": {
+    "overall": [
+      "very casual",
+      "informal",
+      "short",
+      "conversational",
+      "sometimes grammatically imperfect",
+      "sometimes poorly punctuated",
+      "natural student typing",
+      "not polished",
+      "not literary",
+      "not corporate",
+      "not promotional"
+    ],
+
+    "important_rule": "The goal is to reproduce statistical writing characteristics of the source dataset, not to reproduce individual posts or phrases.",
+
+    "writing_quality": {
+      "do_not_make_grammatically_perfect": true,
+      "do_not_polish_user_like_text": true,
+      "allow_informal_sentence_structure": true,
+      "allow_missing_punctuation": true,
+      "allow_lowercase_start": true,
+      "allow_abbreviations": true,
+      "allow_language_mixing": true,
+      "allow_informal_word_order": true,
+      "allow_short_fragments": true,
+      "allow_run_on_sentences": true
+    },
+
+    "punctuation": {
+      "avoid_em_dash": true,
+      "avoid_en_dash": true,
+      "avoid_semicolon": true,
+      "avoid_colon_when_unnecessary": true,
+      "avoid_formal_punctuation": true,
+      "do_not_force_periods": true,
+      "multiple_question_marks_allowed": true,
+      "multiple_exclamation_marks_allowed": true,
+      "ellipsis_allowed": true
+    },
+
+    "dash_rule": "Students in the reference dataset rarely use polished dash-based sentence structures. Do not use em dashes or en dashes in generated posts.",
+
+    "imperfection_rule": "Imperfections must resemble natural casual typing. Do not insert random spelling mistakes simply to look human."
+  },
+
+  "language": {
+    "cyrillic_percentage": 70,
+    "latin_percentage": 18,
+    "mixed_percentage": 12,
+
+    "allow_russian": true,
+    "allow_kazakh": true,
+    "allow_english": true,
+    "allow_language_mixing": true,
+
+    "mixing_rule": "Language mixing should happen naturally and occasionally. Do not force English words into Cyrillic posts."
+  },
+
+  "length": {
+    "target_median_characters": 71,
+    "preferred_character_range": [20, 180],
+    "preferred_word_range": [4, 30],
+    "allow_longer_posts": true,
+    "long_post_max_characters": 500,
+
+    "rule": "Most posts should be short. They should look like something typed quickly into an anonymous student app."
+  },
+
+  "format": {
+    "questions_percentage": 42,
+    "statements_percentage": 38,
+    "opinions_percentage": 15,
+    "stories_percentage": 5,
+
+    "rule": "Questions should be common, but not every post should be a question."
+  },
+
+  "content_categories": {
+    "campus_life": 15,
+    "student_opinions": 15,
+    "questions_and_advice": 20,
+    "relationships_and_social_life": 10,
+    "food_and_places": 10,
+    "classes_and_studying": 10,
+    "funny_and_random": 10,
+    "clubs_and_events": 5,
+    "general_student_life": 5
+  },
+
+  "safe_content_generation": {
+    "preferred": [
+      "questions",
+      "opinions",
+      "hypothetical situations",
+      "general student experiences",
+      "requests for advice",
+      "relatable observations",
+      "general debates",
+      "generic recommendations",
+      "student frustrations",
+      "student preferences",
+      "social situations without identifiable people"
+    ],
+
+    "rule": "When the generator does not have verified information about a university, it must speak generally or ask other students rather than state an unknown fact."
+  },
+
+  "verified_information": {
+    "currently_available": false,
+
+    "rule": "The generator must assume it knows nothing factual about the university unless verified university-specific data is explicitly provided.",
+
+    "allowed_without_verified_data": [
+      "Does anyone know where students usually print stuff?",
+      "кто знает где можно нормально поесть рядом с универом?",
+      "у кого тоже первая пара с утра это просто пытка",
+      "anyone else studying better at night?",
+      "где обычно ищете подработку?",
+      "кто знает хорошие места для учебы?"
+    ],
+
+    "not_allowed_without_verified_data": [
+      "В корпусе 3 опять отключили воду",
+      "На третьем этаже нет розеток",
+      "Новый фудтрак открылся у главного входа",
+      "Клуб кино завтра проводит показ",
+      "На крыше нового корпуса красивый вид",
+      "У профессора по аналитике новая система оценивания",
+      "В столовой сегодня поменяли меню"
+    ]
+  },
+
+  "factual_claims": {
+    "hard_rule": "Never invent specific factual information about the university.",
+
+    "must_not_assume": [
+      "buildings",
+      "building floors",
+      "campus locations",
+      "food trucks",
+      "cafeterias",
+      "restaurants",
+      "clubs",
+      "events",
+      "event dates",
+      "professors",
+      "courses",
+      "course policies",
+      "grading systems",
+      "class schedules",
+      "campus rules",
+      "student services",
+      "libraries",
+      "dorms",
+      "dorm rules",
+      "campus facilities",
+      "campus problems",
+      "weather",
+      "local businesses",
+      "opening hours",
+      "prices",
+      "transportation",
+      "specific student behavior"
+    ],
+
+    "safe_transformation": "Convert unknown factual claims into questions or generic statements.",
+
+    "example": {
+      "unsafe": "На третьем этаже опять сломался принтер",
+      "safe": "кто знает где можно нормально распечатать документы?"
+    }
+  },
+
+  "engagement_patterns": [
+    "Ask other students for recommendations.",
+    "Ask whether other students feel the same way.",
+    "Ask for advice.",
+    "Start a harmless debate.",
+    "Share a general observation.",
+    "Ask an open-ended question.",
+    "Ask about common student experiences.",
+    "Ask for opinions.",
+    "Present a relatable hypothetical situation."
+  ],
+
+  "personal_voice": {
+    "first_person_allowed": true,
+    "second_person_allowed": true,
+
+    "rule": "First-person posts may describe generic thoughts or preferences but must not fabricate specific real-world experiences that require verification.",
+
+    "safe": [
+      "я вообще не могу нормально учиться утром",
+      "мне почему то легче учиться ночью",
+      "я бы выбрал библиотеку",
+      "я всегда откладываю дз до последнего"
+    ],
+
+    "unsafe": [
+      "вчера у меня украли ноутбук в библиотеке",
+      "я видел как профессор X...",
+      "я вчера был на новом мероприятии..."
+    ]
+  },
+
+  "casual_language": {
+    "target_posts_with_casual_language_percentage": 15,
+    "use_sparingly": true,
+
+    "allowed": [
+      "casual Russian",
+      "casual Kazakh",
+      "occasional English slang",
+      "student abbreviations",
+      "informal expressions"
+    ],
+
+    "rule": "Casual language should appear naturally and should not be inserted into every post."
+  },
+
+  "emojis": {
+    "target_posts_with_emoji_percentage": 15,
+    "maximum_average_emojis_per_post": 1,
+    "rule": "Emoji use should be occasional."
+  },
+
+  "authenticity": {
+    "desired_feeling": "A student quickly typed a thought or question into an anonymous campus app.",
+
+    "avoid": [
+      "perfect grammar",
+      "formal writing",
+      "essay-like structure",
+      "marketing language",
+      "AI-sounding phrasing",
+      "unnecessary explanations",
+      "overly clever metaphors",
+      "corporate vocabulary",
+      "perfect punctuation",
+      "em dash constructions",
+      "fake campus details",
+      "fake personal stories"
+    ]
+  },
+
+  "originality": {
+    "must_be_original": true,
+    "must_not_copy_source_posts": true,
+    "must_not_paraphrase_source_posts": true,
+    "must_not_reuse_identifiable_people": true,
+    "must_not_reuse_usernames": true,
+    "must_not_reuse_contact_information": true
+  },
+
+  "privacy": {
+    "never_generate": [
+      "real people's names in identifying contexts",
+      "descriptions that could identify a student",
+      "social media handles",
+      "phone numbers",
+      "email addresses",
+      "requests to identify a specific person",
+      "private information",
+      "gossip identifying a specific person"
+    ]
+  },
+
+  "safety": {
+    "never_generate": [
+      "targeted harassment",
+      "threats",
+      "doxxing",
+      "sexual content involving identifiable students",
+      "dangerous misinformation",
+      "instructions for wrongdoing"
+    ]
+  },
+
+  "generation_rules": [
+    "Generate completely original content.",
+    "Use the style profile as a statistical guide.",
+    "Do not imitate individual source posts.",
+    "Do not mention Telegram.",
+    "Do not invent university-specific facts.",
+    "Do not invent events.",
+    "Do not invent professors.",
+    "Do not invent buildings or campus locations.",
+    "Do not invent restaurants or food trucks.",
+    "Do not invent personal experiences that require verification.",
+    "When information is unknown, ask a question instead of making a claim.",
+    "Keep most posts short.",
+    "Use casual punctuation.",
+    "Do not use em dashes or en dashes.",
+    "Do not make every sentence grammatically perfect.",
+    "Do not deliberately insert random spelling errors.",
+    "Do not force slang.",
+    "Do not force emojis.",
+    "Vary topics.",
+    "Vary opening words.",
+    "Avoid repetitive sentence structures.",
+    "Quality is more important than reaching exactly 20 posts."
+  ],
+
+  "quality_control": {
+    "required_checks": [
+      "privacy_check",
+      "safety_check",
+      "source_similarity_check",
+      "duplicate_check",
+      "quality_check",
+      "language_check",
+      "topic_diversity_check",
+      "unverified_fact_check",
+      "ai_style_check"
+    ],
+
+    "reject_if": [
+      "contains an invented university-specific fact",
+      "contains an invented event",
+      "contains an invented identifiable person",
+      "contains an invented professor or course detail",
+      "contains identifiable personal information",
+      "targets an identifiable person",
+      "uses an em dash",
+      "sounds excessively polished",
+      "sounds like marketing copy",
+      "sounds obviously AI-generated",
+      "is meaningless",
+      "is too repetitive",
+      "copies or closely paraphrases a source post"
+    ]
+  }
+}

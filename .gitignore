@@ -1,0 +1,18 @@
+.env
+*.session
+__pycache__/
+.venv/
+telegram_login_qr.png
+
+# Scraped Telegram data: real, non-consented posts from real students, some containing
+# identification requests, harassment, or other content the pipeline itself filters out.
+# Kept local only, never committed (see README).
+raw_telegram_posts.json
+cleaned_telegram_posts.json
+safe_style_posts.json
+flagged_telegram_posts.json
+excluded_posts.json
+review_posts.json
+
+# Per-run debug dump of the generation pipeline (large, regenerated on every run).
+generation_debug.json
